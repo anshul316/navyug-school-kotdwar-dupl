@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- BLOG POST -->
+            <div class="col-lg-8">
+
+                <div class="blog-card">
+
+                    <img src="https://navyugkotdwar.in/wp-content/uploads/2025/12/blog-new-image.webp" class="blog-img"
+                        width="80%">
+
+                    <div class="meta">
+                        👤 by Admin | 📅 December 24, 2025 | ❤️ Health
+                    </div>
+
+                    <h2 class="blog-title">
+                        Navyug Public School, Kotdwar: A Trusted School Near You Built on Values
+                    </h2>
+                    <br>
+                    <h3 class="blog-title">Looking for a School Near You That Feels Right?</h3><br>
+                    <p>When parents search for a school near me, they are not only looking for convenience. They are
+                        looking for a place where their child will feel safe, understood, and guided with care.
+                        <br>
+                        Navyug Public School was founded with a simple belief, education should be personal,
+                        disciplined, and value-driven. In a growing city like Kotdwar, families want a school that
+                        understands local values while preparing children for a confident future.
+                        <br>
+                        Here, learning begins with trust.
+                    </p>
+
+                    <h4 class="blog-title">Why Parents in Kotdwar Trust Navyug Public School</h4><br>
+                    <p>Navyug Public School has grown over the years not through loud promises, but through consistent
+                        effort and honesty.</p>
+                    <br>
+                    <h5 class="blog-title">A School That Understands Local Families</h5><br>
+                    <p>Being a school in Kotdwar, we understand the expectations and concerns of parents here. We
+                        believe education should support both academic growth and character development.</p>
+                    <h5 class="blog-title">Teachers Who Know Children by Name</h5><br>
+                    <p>At Navyug, students are not identified by roll numbers. Teachers know their students personally,
+                        their strengths, challenges, and progress, creating a supportive learning environment.</p>
+
+                        <h3>More Than a Nearby School, A Place Where Children Grow</h3><br>
+                        <p>When parents look for the best school near me, they are searching for peace of mind. Navyug Public School offers a calm, respectful atmosphere where children are encouraged to learn, ask questions, and grow with confidence — every single day.</p>
+                </div>
+
+
+            </div>
+        </div>
+         <!-- SIDEBAR -->
+            <div class="col-lg-4">
+
+                <!-- SEARCH -->
+                <div class="sidebar-box">
+
+                    <h5 class="mb-3">Search</h5>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-danger">Search</button>
+                    </div>
+
+                </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    </script>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

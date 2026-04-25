@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="traditions.css">
+    <style>
+        .founder-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* The Main Card Styling */
+        .founder-card {
+            background: #ffffff;
+            border: 1px solid #e0e6ed;
+            border-left: 5px solid #d93025;
+            /* Red border on the left like the image */
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Image Wrapper with Red Background tag */
+        .image-container {
+            position: relative;
+            display: inline-block;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 8px solid #f1f3f5;
+        }
+
+        .name-tag {
+            background-color: #d93025;
+            /* Exact Red color */
+            color: #fff;
+            padding: 15px;
+            width: 100%;
+            position: relative;
+        }
+
+        .name-tag h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        /* Text Content Area */
+        .content-area p {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Decorative background (The blue/yellow shapes in your image) */
+        .founder-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png'),
+                linear-gradient(45deg, #007bff22, #ffc10722);
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            z-index: -1;
+            border-bottom-right-radius: 15px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            .content-area p {
+                text-align: left;
+                font-size: 0.95rem;
+            }
+
+            .display-5 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <section class="founder-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-danger fw-bold text-uppercase mb-1">
+                    <i class="bi bi-book"></i> NAVYUG SCHOOL
+                </h6>
+                <h1 class="display-5 fw-bold text-dark">Founder & Chairman</h1>
+            </div>
+
+            <div class="founder-card p-4 p-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                        <div class="image-container">
+                            <img src="https://navyugkotdwar.in/wp-content/uploads/2025/12/Admin-Head.webp"
+                                alt="Late Mrs. Shaily Negi" class="img-fluid rounded-3 shadow">
+                            <div class="name-tag">
+                                <h4 class="mb-0">Ms. Arpita Negi</h4>
+                                <p class="mb-0 small">Administrative Head</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 content-area">
+                        <p class="lead text-muted mb-4">
+                            <i>“Every child matters — and every child deserves to be seen, challenged, and believed
+                                in.”</i>
+                        </p>
+                        <p>As an alumna of Navyug, this school has always been more than just a workplace for me — it’s
+                            home. I have walked through these corridors as a student, and today, I walk them again as a
+                            mentor and leader. That journey reminds me every day why Navyug is special — because here,
+                            we don’t just teach; we transform.
+                        </p>
+
+                        <p>I believe that growth doesn’t happen in comfort. That’s why I often tell my students — “It’s
+                            okay to feel uncomfortable; that’s where real learning begins.” At Navyug, we gently push
+                            our children beyond their comfort zones — not to test them, but to help them discover how
+                            capable they truly are. Whether it’s through a new challenge, a stage performance, a debate,
+                            or a simple act of courage in class — these moments build strength, adaptability, and
+                            confidence.</p>
+
+                        <p>As the Administrative Head, I connect deeply with every student’s journey — their fears,
+                            their dreams, their doubts. I want them to dream big, to set their sights not just on what
+                            they can see, but on what they can imagine. Because I know they have the power to reach
+                            heights they’ve never thought possible.</p>
+                        <p>Being a part of Navyug is a reminder that strong roots build fearless wings. We hold our
+                            traditions close, but our minds open wide to the future. My mission is to ensure that every
+                            child who walks out of these gates leaves ready — ready to lead, to create, to question, and
+                            to make a difference.
+
+                            For me, Navyug is not just an institution; it’s a heartbeat — one that echoes with the
+                            laughter, curiosity, and courage of every child who has ever called this place their school.
+                        </p>
+                    </div>
+
+                    <div class="shape-decoration"></div>
+                </div>
+            </div>
+    </section>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    </script>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

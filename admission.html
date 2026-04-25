@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font AwesomeWe warmly welcome new students and families to join our school community. Our admission process -->
+    <!-- is designed to be transparent, simple, and supportive for parents. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header"></div>
+    <br>
+    <div class="container">
+        <section class="Admission">
+            <h5 class="text-danger"> <i class="fa-solid fa-book"></i>navyug school</h5>
+            <h1 class="blog-title">Admission Process</h1><br><br>
+
+            <ul>
+                <li>Inquiry & Visit – Parents are encouraged to visit the school, meet our staff, and explore the
+                    campus.</li>
+                <li>Application Form – Collect and submit the admission form along with required documents.</li>
+
+                <li>Interaction/Assessment – Depending on the class, students may undergo a short interaction or
+                    assessment to understand their learning level.</li>
+                <li>Confirmation of Admission – Once selected, parents are guided through the fee submission and
+                    enrollment process.</li>
+            </ul>
+            <p>Our admission team is always available to assist parents and ensure a smooth experience. We look forward
+                to welcoming you into our family, where your child will receive not just education, but an environment
+                to truly learn, grow, and thrive.</p>
+
+        </section>
+        <button ><a class="btn" href="https://navyugkotdwar.in/wp-content/uploads/2025/12/Navyug-Admisson-Form.pdf">Download Admission form<i class="fa-solid fa-cloud-arrow-down"></i></a></button>
+
+
+    </div>
+    <br><br>
+    <div id="footer"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    </script>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

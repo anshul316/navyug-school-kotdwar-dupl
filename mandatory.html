@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+ 
+<style>
+
+/* BODY */
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#f5f7fa,#eef1f5);
+padding:50px 0;
+}
+
+/* CONTAINER */
+.disclosure-container{
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(12px);
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.12);
+overflow:hidden;
+border:1px solid rgba(255,255,255,0.3);
+animation:fadeUp 0.8s ease;
+}
+
+/* TITLE */
+.main-title{
+color:#1a237e;
+font-weight:700;
+text-align:center;
+margin-bottom:40px;
+text-transform:uppercase;
+letter-spacing:1px;
+position:relative;
+}
+
+.main-title::after{
+content:"";
+width:80px;
+height:4px;
+background:linear-gradient(90deg,#e63946,#ff7b00);
+display:block;
+margin:10px auto 0;
+border-radius:10px;
+}
+
+/* HEADER BARS */
+.section-header{
+background:linear-gradient(90deg,#e63946,#ff5a5f);
+color:white;
+padding:14px 22px;
+font-weight:600;
+font-size:1.1rem;
+margin-bottom:0;
+letter-spacing:0.5px;
+}
+
+/* TABLE */
+.table-custom{
+margin-bottom:0;
+}
+
+.table-custom thead th{
+background:#2c3e50;
+color:white;
+text-transform:uppercase;
+font-size:0.85rem;
+letter-spacing:0.5px;
+padding:15px;
+border:none;
+}
+
+/* ROW HOVER */
+.table-custom tbody tr{
+transition:all 0.3s ease;
+}
+
+.table-custom tbody tr:hover{
+background:rgba(230,57,70,0.06);
+transform:scale(1.01);
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* TD */
+.table-custom td{
+padding:15px;
+vertical-align:middle;
+border-color:#eee;
+color:#444;
+}
+
+/* LABELS */
+.info-label{
+font-weight:600;
+color:#2c3e50;
+}
+
+.details-text{
+color:#555;
+}
+
+/* LINKS */
+.link-text{
+color:#e63946;
+text-decoration:none;
+font-weight:500;
+position:relative;
+}
+
+.link-text::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-2px;
+width:0;
+height:2px;
+background:#e63946;
+transition:0.3s;
+}
+
+.link-text:hover::after{
+width:100%;
+}
+
+/* BUTTON */
+.btn-view{
+color:#e63946;
+text-decoration:none;
+font-weight:600;
+font-size:0.9rem;
+padding:6px 14px;
+border:1.5px solid #e63946;
+border-radius:6px;
+transition:0.3s;
+}
+
+.btn-view:hover{
+background:#e63946;
+color:white;
+box-shadow:0 5px 15px rgba(230,57,70,0.35);
+transform:translateY(-2px);
+}
+
+/* NOTE */
+.note-section{
+background:#fff5f5;
+border-left:5px solid #e63946;
+padding:20px;
+margin-top:30px;
+border-radius:0 10px 10px 0;
+}
+
+.note-title{
+color:#e63946;
+font-weight:700;
+text-decoration:underline;
+margin-bottom:10px;
+display:block;
+}
+
+/* STAFF ITEMS */
+.staff-sub-item{
+display:flex;
+justify-content:space-between;
+padding:5px 0;
+border-bottom:1px dashed #eee;
+}
+
+.staff-sub-item:last-child{
+border-bottom:none;
+}
+
+.sub-label{
+font-weight:500;
+color:#666;
+}
+
+.sub-value{
+font-weight:600;
+color:#2c3e50;
+}
+
+/* BADGE */
+.badge-info{
+background:#2c3e50;
+color:white;
+padding:5px 14px;
+border-radius:20px;
+font-size:0.85rem;
+}
+
+/* YOUTUBE LINK */
+.yt-link{
+display:inline-flex;
+align-items:center;
+gap:8px;
+color:#ff0000;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.yt-link:hover{
+transform:translateY(-2px);
+color:#c00;
+}
+
+/* SEARCH BOX */
+.search-box{
+max-width:300px;
+margin-bottom:20px;
+border-radius:25px;
+border:1px solid #ddd;
+padding:10px 18px;
+transition:0.3s;
+}
+
+.search-box:focus{
+outline:none;
+border-color:#e63946;
+box-shadow:0 0 8px rgba(230,57,70,0.2);
+}
+
+/* DESIGNATION BADGE */
+.designation-badge{
+font-size:0.8rem;
+padding:4px 10px;
+border-radius:12px;
+font-weight:600;
+background:#f0f2f5;
+color:#2c3e50;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+<body>
+    <div id="header"></div>
+<div class="container">
+    <h1 class="main-title">Mandatory Public Disclosure</h1>
+
+    <div class="disclosure-container">
+        <div class="section-header">
+            General Information
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-custom">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">SL NO.</th>
+                        <th style="width: 35%">Information</th>
+                        <th style="width: 55%">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="info-label">Name Of The School</td>
+                        <td class="details-text">Navyug Public School</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="info-label">Affiliation No. (If Applicable)</td>
+                        <td class="details-text">3530352</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="info-label">School Code (If Applicable)</td>
+                        <td class="details-text">81579</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="info-label">Complete Address With Pin Code</td>
+                        <td class="details-text">Padampur, Motadhak, Kotdwara, Pauri Garhwal, Uttarakhand - 246149</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="info-label">Principal Name</td>
+                        <td class="details-text">Neelam Negi</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="info-label">Principal Qualification</td>
+                        <td class="details-text">M.A., B.Ed.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="info-label">School Email Id</td>
+                        <td><a href="mailto:navyugpublicmotadhak@gmail.com" class="link-text">navyugpublicmotadhak@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="info-label">Contact Details (Landline/Mobile)</td>
+                        <td class="details-text">9528098801</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section-header mt-0">
+            Documents And Information:
+        </div>
+        
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="disclosure-container">
+        <div class="section-header">
+            Documents And Information:
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-custom">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">SL NO.</th>
+                        <th style="width: 70%">DOCUMENTS AND INFORMATION</th>
+                        <th style="width: 20%" class="text-center">DOCUMENTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="info-label">Copies Of Affiliation/Upgradation Letter And Recent Extension Of Affiliation, If Any</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/RTE-Affiliation1.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="info-label">Copies Of Societies/Trust/Company Registration/Renewal Certificate, As Applicable</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/PDF-SOCIETY-RENEWAL.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="info-label">Copy Of No Objection Certificate (Noc) Issued, If Applicable, By The State Govt./UT</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/NOC-State-Govt.1.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="info-label">Copies Of Recognition Certificate Under Rte Act, 2009, And It's Renewal If Applicable</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/AFFILIATION-LETTER.pdf" class="btn-view">Not Uploaded</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="info-label">Copy Of Valid Building Safety Certificate As Per The National Building Code</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/Building-Safety-Certificate-1.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="info-label">Copy Of Valid Fire Safety Certificate Issued By The Competent Authority</td>
+                        <td class="text-center"><a href="#" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="info-label">Copy Of The Self Certification Submitted By The School For Affiliation/Upgradation/Extension Of Affiliation</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/Fire-safety-certificate.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="info-label">Copies Of Valid Water, Health And Sanitation Certificates</td>
+                        <td class="text-center"><a href="https://navyugkotdwar.in/wp-content/uploads/2025/09/Safe-Water-Drinking-Sanitary.pdf" class="btn-view">Click to View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="note-section">
+        <span class="note-title">NOTE:</span>
+        <p class="mb-0 text-muted" style="line-height: 1.6;">
+            The Schools Needs To Upload The Self Attested Copies Of Above Listed Documents By Chairman/Manager/Secretary And Principal. In Case, It Is Noticed At Later Stage That Uploaded Documents Are Not Genuine Then School Shall Be Liable For Action As Per Norms.
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container mt-4 mb-5">
+    <div class="disclosure-container">
+        <div class="section-header">
+            Staff (Teaching)
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-custom">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">SL NO.</th>
+                        <th style="width: 45%">INFORMATION</th>
+                        <th style="width: 45%">DETAILS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="info-label">Principal</td>
+                        <td class="details-text fw-bold">Neelam Negi</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>2</td>
+                        <td class="info-label">Total No. Of Teachers</td>
+                        <td>
+                            <div class="staff-sub-item">
+                                <span class="sub-label">Total Teachers</span>
+                                <span class="sub-value">26</span>
+                            </div>
+                            <div class="staff-sub-item">
+                                <span class="sub-label">PGT</span>
+                                <span class="sub-value">13</span>
+                            </div>
+                            <div class="staff-sub-item">
+                                <span class="sub-label">TGT</span>
+                                <span class="sub-value">6</span>
+                            </div>
+                            <div class="staff-sub-item">
+                                <span class="sub-label">PRT</span>
+                                <span class="sub-value">7</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td class="info-label">Teachers Section Ratio</td>
+                        <td class="details-text">40:1</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td class="info-label">Details Of Special Educator</td>
+                        <td class="details-text">Kamla Tiwari</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td class="info-label">Details Of Counsellor And Wellness Teacher</td>
+                        <td class="details-text">Pradeep Singh Rawat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="container mt-4 mb-5">
+    <div class="disclosure-container">
+        <div class="section-header">
+            School Infrastructure
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-custom">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">SL NO.</th>
+                        <th style="width: 60%">INFORMATION</th>
+                        <th style="width: 30%">DETAILS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="info-label">Total Campus Area Of The School (In Sq Mtr)</td>
+                        <td><span class="details-text fw-bold">4779</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="info-label">No. And Size Of The Class Rooms (In Sq Mtr)</td>
+                        <td><span class="details-text fw-bold">21 & 48</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="info-label">No. And Size Of Laboratories Including Computer Labs (In Sq Mtr)</td>
+                        <td><span class="details-text fw-bold">6 & 56</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="info-label">Internet Facility</td>
+                        <td>
+                            <span class="badge bg-success">Yes</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="info-label">No. Of Girls Toilets</td>
+                        <td><span class="details-text fw-bold">12</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="info-label">No. Of Boys Toilets</td>
+                        <td><span class="details-text fw-bold">12</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="info-label">Link Of Youtube Video Of The Inspection Of School Covering The Infrastructure Of The School</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=cY6TJk4RI-Q&t=3s   " target="_blank" class="yt-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.342 1.12.338 3.44.338 3.44s.004 2.32-.338 3.44a2.01 2.01 0 0 1-1.415 1.42c-1.123.302-5.288.332-6.11.335a34.614 34.614 0 0 1-.09 0c-.822-.003-4.987-.033-6.11-.335a2.01 2.01 0 0 1-1.415-1.42C.002 9.7 0 7.38 0 7.38s-.002-2.32.338-3.44a2.01 2.01 0 0 1 1.415-1.42c1.122-.302 5.288-.332 6.11-.335zM6.5 5.2v4.596L10.304 7.5z"/>
+                                </svg>
+                                Watch Video
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container mt-4 mb-5">
+    <div class="disclosure-container">
+        <div class="section-header d-flex justify-content-between align-items-center">
+            <span>Teacher Details:</span>
+        </div>
+        
+        <div class="table-responsive">
+            <table class="table table-custom mb-0">
+                <thead>
+                    <tr>
+                        <th style="width: 8%">SL NO.</th>
+                        <th style="width: 35%">TEACHER NAME</th>
+                        <th style="width: 27%">DESIGNATION</th>
+                        <th style="width: 30%">QUALIFICATION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="info-label">Santosh Dhyani</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="info-label">Pradeep Rawat</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.SC</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="info-label">Pratima Karakoti</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="info-label">Swati Rawat</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="info-label">Neeraj Kumar</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.SC</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="info-label">Anita Sharma</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">BA</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="info-label">Kusum Negi</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="info-label">Neelam Negi</td>
+                        <td><span class="designation-badge" style="background: #1a237e; color: white;">Principal</span></td>
+                        <td class="details-text">BA</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="info-label">Arun Kumar</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.Sc</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="info-label">Rajnish Kumar</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.Sc</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="info-label">Archana Gusain</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">M.Sc</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="info-label">Jankee Bisht</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">MA</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td class="info-label">Kusum Kali Bharti</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">Master Of Arts (English)</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="info-label">	Babita Sharma</td>
+                        <td><span class="designation-badge">NTT</span></td>
+                        <td class="details-text">BA</td>
+                    </tr>
+                     <tr>
+                        <td>15</td>
+                        <td class="info-label">Mohit Uniyal</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">	M.a Political Science</td>
+                    </tr>
+                     <tr>
+                        <td>16</td>
+                        <td class="info-label">		Varsha</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">	M.A/B.Ed</td>
+                    </tr>
+                     <tr>
+                        <td>17</td>
+                        <td class="info-label">	Rakesh Singh</td>
+                        <td><span class="designation-badge">	Other</span></td>
+                        <td class="details-text">	B.Sc</td>
+                    </tr>
+                     <tr>
+                        <td>18</td>
+                        <td class="info-label">Poonam Bijlawan	</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">B.Sc/B.ed</td>
+                    </tr>
+                     <tr>
+                        <td>19</td>
+                        <td class="info-label">	Priya Bisht</td>
+                        <td><span class="designation-badge">PGT </span></td>
+                        <td class="details-text">BCA</td>
+                    </tr>
+                   
+                     <tr>
+                        
+                        <td>20</td>
+                        <td class="info-label">Avinash Rawat	</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.Sc</td>
+                    </tr>
+                     <tr>
+                        <td>21</td>
+                        <td class="info-label">Priyanksha-Jung</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">MSc</td>
+                    </tr>
+                     <tr>
+                        <td>22</td>
+                        <td class="info-label">Laxmi Thapliyal</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                     <tr>
+                        <td>23</td>
+                        <td class="info-label">Aarti rawat	</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">Bsc</td>
+                    </tr>
+                     <tr>
+                        <td>24</td>
+                        <td class="info-label">Megha Budhakoti	</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">Bsc</td>
+                    </tr>
+                     
+                     <tr>
+                        <td>25</td>
+                        <td class="info-label">	Ragini Chauhan	</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">M.COM</td>
+                    </tr>
+                     <tr>
+                        <td>26</td>
+                        <td class="info-label">		Ankit Negi</td>
+                        <td><span class="designation-badge">PGT</span></td>
+                        <td class="details-text">BA</td>
+                    </tr>
+
+                       <tr>
+                        <td>27</td>
+                        <td class="info-label">Priya Bahukhandi	</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">B.A</td>
+                    </tr>
+                     <tr>
+                        <td>28</td>
+                        <td class="info-label">Reena Bhandari	</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">MS.c</td>
+                    </tr>
+                     <tr>
+                        <td>29</td>
+                        <td class="info-label">Arpita Negi</td>	</td>
+                        <td><span class="designation-badge">Other</span></td>
+                        <td class="details-text">12</td>
+                    </tr>
+                     <tr>
+                        <td>30</td>
+                        <td class="info-label">	Deepa</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">M.sc</td>
+                         <tr>
+                        <td>31</td>
+                        <td class="info-label">Asha	</td>
+                        <td><span class="designation-badge">Guestteacher</span></td>
+                        <td class="details-text">MA music</td>
+                    </tr>
+                    </tr>
+                     <tr>
+                        <td>32</td>
+                        <td class="info-label">	Rinkey</td>
+                        <td><span class="designation-badge">PRT</span></td>
+                        <td class="details-text">M.A</td>
+                    </tr>
+                     <tr>
+                        <td>33</td>
+                        <td class="info-label">	Ridhi Bhatt</td>
+                        <td><span class="designation-badge">TGT</span></td>
+                        <td class="details-text">Bachelor of Art</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => { document.getElementById("header").innerHTML = data; })
+            .catch(err => console.error("Header load failed. Use a local server (Live Server)!"));
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => { document.getElementById("footer").innerHTML = data; })
+            .catch(err => console.error("Footer load failed."));
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

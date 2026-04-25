@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Gallery</title>
+
+<style>
+
+.gallery-section{
+background:#f5f5f5;
+padding:60px 0;
+}
+
+.gallery-img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:6px;
+transition:0.3s;
+}
+
+.gallery-img:hover{
+transform:scale(1.05);
+}
+.gallery-item{
+position:relative;
+overflow:hidden;
+border-radius:8px;
+}
+
+.gallery-item::before{
+content:"";
+position:absolute;
+top:0;
+left:-100%;
+width:50%;
+height:100%;
+background:linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,0.5),
+transparent
+);
+transition:0.6s;
+}
+
+.gallery-item:hover::before{
+left:120%;
+}
+
+.gallery-img{
+width:100%;
+height:250px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.gallery-item:hover .gallery-img{
+transform:scale(1.08);
+}
+</style>
+
+</head>
+<body>
+<div id="header"></div>
+<h1 class="blog-title"> /GALLERY/ </h1>
+<section class="gallery-section">
+  
+
+<div class="container">
+
+<div class="row g-4">
+
+<!-- Image 1 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/about-us-banner-442x348.jpeg" class="gallery-img">
+</div>
+
+<!-- Image 2 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/slider-image-teacher-442x348.webp" class="gallery-img">
+</div>
+
+<!-- Image 3 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/slider1.webp" class="gallery-img">
+</div>
+
+<!-- Image 4 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/slider-2-442x348.webp" class="gallery-img">
+</div>
+
+<!-- Image 5 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/Educational-Programmes-442x348.webp" class="gallery-img">
+</div>
+
+<!-- Image 6 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/slider3-442x348.webp" class="gallery-img">
+</div>
+
+<!-- Image 7 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/slider-image-student-442x348.webp" class="gallery-img">
+</div>
+
+<!-- Image 8 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/slider-6-black-and-white-442x348.jpg" class="gallery-img">
+
+</div>
+<!-- 9 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/Why-Choose-Us-banner.jpeg" class="gallery-img">
+</div>
+<!-- 10 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/why-choose-home-1-442x348.webp" class="gallery-img">
+</div>
+<!-- 11 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/09/about-us-image-442x348.webp" class="gallery-img">
+</div>
+<!-- 12 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2023/07/blog-new-image-442x348.webp" class="gallery-img">
+</div>
+<!-- 13 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2023/07/blog-image-442x348.webp" class="gallery-img">
+</div>
+<!-- 14 -->
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2023/07/Sport-image-blog-442x348.webp" class="gallery-img">
+</div>
+<!--  15-->
+  <div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0904-442x348.jpg" class="gallery-img">
+</div>
+<!-- 16 -->
+    <div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0911-442x348.jpg" class="gallery-img">
+</div>
+ <div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0917-442x348.jpg" class="gallery-img">
+</div>
+ <div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0963-442x348.jpg" class="gallery-img">
+</div>
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0964-442x348.jpg" class="gallery-img">
+</div>
+
+<div class="col-lg-3 col-md-6 col-12">
+<img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_1074-442x348.jpg" class="gallery-img">
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+<div id="footer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
+</script>
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>

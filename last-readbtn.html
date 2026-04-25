@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f6f8;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .read-more {
+            color: #e63946;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .sidebar-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .recent-post a {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+
+        <div class="col-lg-8">
+
+            <div class="blog-card">
+
+                <img src="https://navyugkotdwar.in/wp-content/uploads/2023/07/Sport-image-blog.webp" class="blog-img">
+
+                <div class="meta">
+                    👤 by Admin | 📅 July 11, 2023 | ❤️ Health
+                </div>
+
+                <h2 class="blog-title">
+                    A School Near You That Focuses on Learning Beyond Books in Kotdwar
+                </h2>
+                <br>
+                <h3>Education Is More Than Just Textbooks</h3>
+
+                <p>When parents search for a school near me, they are looking for more than academic results. They want
+                    a school that helps their child become confident, responsible, and well-rounded.</p>
+                <p>At Navyug Public School, education goes beyond classrooms and textbooks.</p>
+
+
+
+                <h3>Activities That Help Students Discover Their Strengths</h3>
+                <h4>Confidence Through Cultural and Stage Activities</h4>
+                <p>Participation in school events, performances, and celebrations helps students overcome hesitation and
+                    express themselves with confidence.</p>
+                <h4>Sports, Teamwork, and Discipline</h4>
+                <p>Sports and physical activities teach teamwork, leadership, and respect, values that remain important
+                    throughout life.</p>
+                <h4>Everyday Values That Shape Character</h4>
+                <p>Simple daily habits like punctuality, responsibility, and kindness are encouraged at Navyug, helping
+                    students develop strong character from a young age.</p>
+                <h4>A Nearby School That Prepares Children for Life</h4>
+                <p>Navyug Public School, Kotdwar, focuses on nurturing students who are prepared not only for exams, but
+                    for real-life challenges. Through values, guidance, and consistent learning, we aim to shape
+                    confident individuals ready for the future.</p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <br>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

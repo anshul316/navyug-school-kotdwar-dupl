@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About School</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-card {
+            flex: 1;
+        }
+
+        .about-card .card {
+            border-radius: 12px;
+            transition: 0.4s;
+        }
+
+        .about-card .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .education .card {
+            border-radius: 12px;
+            transition: 0.4s;
+        }
+
+        .education .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card-7 {
+            background: #ef233c !important;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: white;
+        }
+
+        .card-7:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        @media(max-width:768px) {
+            .about-section {
+                flex-direction: column;
+            }
+
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header placeholder -->
+    <div id="header"></div>
+<br>
+    <div class="container">
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section">
+
+            <!-- Image -->
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/about-us-banner.jpeg" alt="School Event">
+            </div>
+
+            <!-- Card -->
+            <div class="about-card" data-aos="fade-left">
+                <div class="card shadow-lg p-4 border-0">
+                    <h5 class="blog-title"><i class="fa-solid fa-book"></i> About School</h5>
+                    <h1>Navyug Senior Secondary Public School</h1>
+                    <h4 class="text-muted">Naya Yug — A New Era of Learning</h4>
+                    <p>
+                        Every morning at Navyug feels like a fresh start. “Naya Yug” isn’t just our name —
+                        it’s our promise: every child gets a new chance to wonder, try, fall, learn, and begin again.
+                    </p>
+                    <p>
+                        We believe childhood should be full of small discoveries and brave experiments,
+                        for it’s through these everyday moments that children grow into curious thinkers
+                        and confident learners.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <br><br>
+
+        <!-- JOURNEY -->
+        <section class="journey">
+            <h1>Our Journey</h1>
+            <p>
+                Our story began in 1999 with one classroom and a big dream — to create a school that prepares children
+                for new beginnings. Founded by the Late Mrs. Shaily Negi and Mr. Hukam Singh Negi, Navyug has grown
+                over the years into a thriving, close-knit family that has nurtured generations of learners.
+            </p>
+            <p>
+                With more than 25 years of commitment to quality education, our journey continues to be guided
+                by the belief that when a child is given a strong foundation, there are no limits to what they can
+                achieve.
+            </p>
+        </section>
+
+        <br><br>
+
+        <!-- EDUCATION / CARDS -->
+        <section class="education">
+            <h5 class="text-center"><i class="fa-solid fa-book"></i> What we do</h5>
+            <h1 class=" blog-title text-center mb-5">Online Education Tailored to You</h1>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow p-4 border-0 h-100">
+                        <h3><i class="fa-solid fa-eye"></i>Vision</h3>
+                        <p>“To shape minds that think, hearts that care, and souls that strive for excellence.”</p>
+                        <p>
+                            We envision Navyug Senior Secondary Public School as a space where learning inspires purpose
+                            and possibilities. Education goes beyond textbooks — it builds thinkers, dreamers, and doers.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card shadow p-4 border-0 h-100">
+                        <h2 class="blog-title"><i class="fa-solid fa-crosshairs"></i>Mission</h2>
+                        <p>“To educate, empower, and enlighten — every child, every day.”</p>
+                        <p>Our mission is to provide a nurturing environment where every child feels valued and inspired.</p>
+                        <p>We strive to:</p>
+                        <ul>
+                            <li>Encourage curiosity, creativity, and lifelong learning.</li>
+                            <li>Build strong moral and emotional foundations.</li>
+                            <li>Foster leadership, teamwork, and social responsibility.</li>
+                            <li>Integrate academics with real-world learning experiences.</li>
+                            <li>Work with parents to raise confident, compassionate individuals.</li>
+                        </ul>
+                        <p>At Navyug, every day begins with a new possibility — to learn, to grow, and to shine brighter.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Cards -->
+        <div class="card-container">
+            <div class="card-7">
+                <h1><i class="fa-solid fa-book"></i></h1>
+                <h2>Curiosity & Lifelong Learning</h2>
+                <p>We nurture minds that ask questions, explore possibilities, and embrace learning as an adventure.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-handshake"></i></h1>
+                <h2>Integrity & Responsibility</h2>
+                <p>Honesty, accountability, and ethical behavior are at the heart of everything we teach.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-heart"></i></h1>
+                <h2>Compassion & Empathy</h2>
+                <p>We believe in caring for others, understanding different perspectives, and acting with kindness.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-fire"></i></h1>
+                <h2>Courage & Resilience</h2>
+                <p>Challenges are opportunities to grow. We encourage children to step beyond their comfort zones.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-brain"></i></h1>
+                <h2>Creativity & Innovation</h2>
+                <p>Original thinking, imagination, and problem-solving are fostered across academics, arts, and life skills.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-arrows-down-to-people"></i></h1>
+                <h2>Collaboration & Leadership</h2>
+                <p>We build strong communities through teamwork, shared goals, and mutual respect.</p>
+            </div>
+            <div class="card-7">
+                <h1><i class="fa-solid fa-trophy"></i></h1>
+                <h2>Excellence & Growth</h2>
+                <p>Every effort is celebrated, every achievement recognized, and every child is supported to reach their highest potential.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

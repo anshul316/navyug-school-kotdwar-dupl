@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f6f8;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .read-more {
+            color: #e63946;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .sidebar-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .recent-post a {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container">
+
+        <div class="col-lg-8">
+
+            <div class="blog-card">
+
+                <img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0782.jpg" class="blog-img">
+
+                <div class="meta">
+                    👤 by Admin | 📅 July 11, 2023 | ❤️ Health
+                </div>
+
+                <h2 class="blog-title">
+                    How to Choose the Right School Near You in Kotdwar for Your Child
+                </h2>
+                <br>
+                <h3>What Parents Really Mean When They Search “School Near Me”</h3>
+
+                <p>Choosing a school is one of the most emotional decisions a parent makes. Behind every search for a
+                    school near me are quiet questions:</p>
+                <p>Will my child be comfortable here?</p>
+                <p>> Will teachers be patient and supportive?</p>
+                <p>Will my child grow with confidence?</p>
+                <p>At Navyug Public School, we understand these concerns because we believe education is a shared
+                    responsibility between school and family.</p>
+                <h3>What to Look for in a Nearby School</h3>
+                <h4>Easy Accessibility for a Balanced Routine</h4>
+                <p>A school close to home helps children maintain a healthy daily routine, reduces travel fatigue, and
+                    allows more time for learning and rest.</p>
+                <h4>Open Communication Between School and Parents</h4>
+                <p>A good school keeps parents informed. Regular communication and approachability help build trust and
+                    ensure children receive consistent support.</p>
+                <h4>Learning Without Unnecessary Pressure</h4>
+                <p>Every child learns differently. At Navyug Public School, students are guided steadily, encouraged to
+                    improve, and supported without unnecessary academic pressure.</p>
+                <h4>Why Many Parents Choose Navyug Public School, Kotdwar</h4>
+                <p>Parents searching for a reliable school near me in Kotdwar often choose Navyug because it offers a
+                    balance of academics, discipline, and care, creating a positive and stable environment for children
+                    to learn and grow.</p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <br>
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

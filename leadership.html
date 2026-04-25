@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Card Container */
+.leader-card {
+    background: #2d3447; /* Dark background as per image */
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    padding: 15px;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Image Box */
+.img-box {
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 300px; /* Fixed height for consistency */
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Image crop nahi hogi, properly fit hogi */
+    transition: scale 0.5s ease;
+}
+
+.leader-card:hover .img-box img {
+    scale: 1.1;
+}
+
+/* Info Section */
+.leader-info h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.leader-info span {
+    color: #cbd5e0;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .img-box {
+        height: 350px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <section class="leadership-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-danger fw-bold"><i class="bi bi-book"></i> GUIDED BY VISION. ROOTED IN VALUES.</h6>
+            <h2 class="blog-title display-5 fw-bold text-dark">Our Leadership</h2><br>
+            <p class="lead mx-auto" style="max-width: 800px; font-size: 0.95rem; color: #555;">
+                At Navyug Senior Secondary Public School, our leadership is not defined by titles, but by purpose. Each member of our management team shares one belief — that every child matters, and every day at school is a chance to inspire, nurture, and transform.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="leader-card">
+                    <div class="img-box">
+                        <img src="https://navyugkotdwar.in/wp-content/uploads/2025/12/chairman.webp" alt="Mr. Hukam Singh Negi" class="img-fluid">
+                    </div>
+                    <div class="leader-info">
+                        <h5>Mr. Hukam Singh Negi</h5>
+                        <span>Founder & Chairman</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="leader-card">
+                    <div class="img-box">
+                        <img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/Late-Mrs.-Shaily-Negi.webp" alt="Late Mrs. Shaily Negi" class="img-fluid">
+                    </div>
+                    <div class="leader-info">
+                        <h5>Late Mrs. Shaily Negi</h5>
+                        <span>Founder & Visionary Educator</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="leader-card">
+                    <div class="img-box">
+                        <img src="https://navyugkotdwar.in/wp-content/uploads/2025/12/Admin-Head.webp" alt="Ms. Arpita Negi" class="img-fluid">
+                    </div>
+                    <div class="leader-info">
+                        <h5>Ms. Arpita Negi</h5>
+                        <span>Administrative Head</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="footer"></div>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 5000,
+            once: true,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f5f6f8;
+        }
+
+        .blog-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .blog-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .read-more {
+            color: #e63946;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .sidebar-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .recent-post a {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+<div id="header"></div>
+    <div class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- BLOG POST -->
+            <div class="col-lg-8">
+
+                <div class="blog-card">
+
+                    <img src="https://navyugkotdwar.in/wp-content/uploads/2025/12/blog-new-image.webp" class="blog-img">
+
+                    <div class="meta">
+                        👤 by Admin | 📅 December 24, 2025 | ❤️ Health
+                    </div>
+
+                    <h2 class="blog-title">
+                        Navyug Public School, Kotdwar: A Trusted School Near You Built on Values
+                    </h2>
+
+                    <p>
+                        Navyug Public School, Kotdwar: A Trusted School Near You Built on Values.
+                        Looking for a school near you that feels right? When parents search for a school near me, they
+                        are not only looking for convenience.
+                    </p>
+
+                    <a class="btn" href="#" class="read-more">READ MORE →</a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+
+                <!-- SEARCH -->
+                <div class="sidebar-box">
+
+                    <h5 class="mb-3">Search</h5>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <button class="btn btn-danger">Search</button>
+                    </div>
+
+                </div>
+
+                <!-- RECENT POSTS -->
+                <div class="sidebar-box">
+
+                    <h5 class="mb-3">Recent Posts</h5>
+
+                    <div class="recent-post">
+
+                        <a href="#">Navyug Public School, Kotdwar: A Trusted School Near You Built on Values</a>
+
+                        <a href="#">How to Choose the Right School Near You in Kotdwar for Your Child</a>
+
+                        <a href="#">A School Near You That Focuses on Learning Beyond Books in Kotdwar</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-8">
+
+                <div class="blog-card">
+
+                    <img src="https://navyugkotdwar.in/wp-content/uploads/2025/10/IMG_0782.jpg" class="blog-img">
+
+                    <div class="meta">
+                        👤 by Admin | 📅 July 11, 2023 | ❤️ Health
+                    </div>
+
+                    <h2 class="blog-title">
+                        How to Choose the Right School Near You in Kotdwar for Your Child
+                    </h2>
+
+                    <p>
+                        How to Choose the Right School Near You in Kotdwar for Your Child What Parents Really Mean When
+                        They Search “School Near Me” Choosing a school is one of the most emotional decisions a parent
+                        makes. Behind every search for a school near me are quiet
+                    </p>
+
+                    <a class="btn" href="#" class="read-more">READ MORE →</a>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-8">
+
+                <div class="blog-card">
+
+                    <img src="https://navyugkotdwar.in/wp-content/uploads/2023/07/Sport-image-blog.webp"
+                        class="blog-img">
+
+                    <div class="meta">
+                        👤 by Admin | 📅 July 11, 2023 | ❤️ Health
+                    </div>
+
+                    <h2 class="blog-title">
+                        A School Near You That Focuses on Learning Beyond Books in Kotdwar
+                    </h2>
+
+                    <p>
+                        A School Near You That Focuses on Learning Beyond Books in Kotdwar Education Is More Than Just
+                        Textbooks When parents search for a school near me, they are looking for more than academic
+                        results. They want a school that helps their child become confident, responsible, and
+                    </p>
+
+                    <a class="btn" href="#" class="read-more">READ MORE →</a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+<div id="footer"></div>
+<script>
+fetch("header.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("header").innerHTML = data;
+});
+</script>
+</script>
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>

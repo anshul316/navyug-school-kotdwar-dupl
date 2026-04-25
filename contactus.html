@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US - Navyug Public School</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root { --primary-red: #e63946; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+      
+      .contact-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    background: white;
+}
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-color: #ff4d4d rgb(115, 6, 121) blue;
+}
+       .form-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-container:hover {
+    border-color: #007bff red; /* hover border color */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+        .btn-send {
+            background-color: var(--primary-red);
+            color: rgb(255, 255, 255);
+            padding: 12px 30px;
+            border-radius: 8px;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-send:hover {
+            background-color: #c12e39;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+        .icon-box {
+            color: var(--primary-red);
+            font-size: 1.5rem;
+            background: #fff0f1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        /* Extra padding to prevent header overlap */
+        section { min-height: 80vh; }
+    </style>
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <section class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="fw-bold mb-4">Have Any Questions?</h2>
+                    <p class="text-muted mb-5">Have an inquiry or some feedback for us? Fill out the form below to contact our team.</p>
+
+                    <div class="contact-card p-4 mb-4 d-flex align-items-start gap-3">
+                        <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h5 class="fw-bold">Phone Number</h5>
+                            <p class="mb-0 text-muted">+91 817-1249-813<br>+91 952-8098-801</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card p-4 mb-4 d-flex align-items-start gap-3">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h5 class="fw-bold">Email</h5>
+                            <p class="mb-0 text-muted">navyugpublicmotadhak@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card p-4 d-flex align-items-start gap-3">
+                        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h5 class="fw-bold">Our Address</h5>
+                            <p class="mb-0 text-muted">Durgapuri, Motadhak, Kotdwar, Uttarakhand 246149</p>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="form-container shadow-sm border">
+                        <span class="text-danger fw-bold text-uppercase small">Contact With Us!</span>
+                        <h2 class="fw-bold mb-4 border-bottom pb-3">Get in Touch</h2>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg bg-white" placeholder="Your Name*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg bg-white" placeholder="Email Address*" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-select form-control-lg bg-white">
+                                        <option selected disabled>Select Class*</option>
+                                        <option>Nursery - UKG</option>
+                                        <option>Class 1 - 5</option>
+                                        <option>Class 6 - 12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control form-control-lg bg-white" placeholder="Phone Number*" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-white" rows="5" placeholder="Write Your Message*"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn-send fw-bold">SEND MESSAGE &nbsp; <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+<iframe
+src="https://www.google.com/maps?q=navyug+public+school+kotdwar&output=embed"
+width="100%"
+height="220"
+style="border:0;"
+loading="lazy">
+</iframe>
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Load Header
+        fetch("header.html")
+            .then(res => res.text())
+            .then(data => { document.getElementById("header").innerHTML = data; })
+            .catch(err => console.error("Header load failed. Use a local server (Live Server)!"));
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => { document.getElementById("footer").innerHTML = data; })
+            .catch(err => console.error("Footer load failed."));
+
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
